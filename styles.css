@@ -1,0 +1,63 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+
+#horloge
+{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 1px solid black;
+    border-radius : 50%;
+}
+
+#heures
+{
+    position:absolute ;
+    transform: rotate(90deg);
+    transform-origin:50% 100% ;
+    width: 150px;
+    border : 5px solid rgb(0, 22, 119);
+    border-radius:5px;
+    left:calc((70% - 10px)/2);
+    top:calc((70% - 10px)/2);
+}
+
+#minutes
+{   
+    position:absolute;
+    transform: rotate(90deg);
+    transform-origin:50% 80% ;
+    width: 200px;
+    border : 5px solid rgb(0, 0, 0);
+    border-radius:5px;
+    left:calc((60% - 10px)/2);
+    top:calc((60% - 10px)/2);
+    z-index: 3;
+}
+
+#secondes
+{ 
+    position:absolute;
+    transform: rotate(90deg);
+    transform-origin:50% 100% ;
+    width: 240px;
+    border : 5px solid red;
+    border-radius:5px;
+    left:calc((50% - 10px)/2);
+    top:calc((50% - 10px)/2);
+}
+
+#centreHorloge
+{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    background-color: black;
+    left:calc((100% - 30px)/2);
+    top:calc((100% - 30px)/2);
+}
